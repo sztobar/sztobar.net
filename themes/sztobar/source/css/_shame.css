@@ -1,0 +1,7 @@
+._selected-option {
+  margin: 0px !important;
+
+  &:not(:last-of-type) {
+    border-bottom: 0px;
+  }
+}

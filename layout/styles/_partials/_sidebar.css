@@ -1,0 +1,38 @@
+﻿@import './_header.css';
+@import './_avatar.css';
+@import './_archives.css';
+@import './_footer.css';
+
+.sidebar {
+  background: url('../bg2.jpg');
+  background-size: cover;
+  background-position: right;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  color: white;
+
+  &__item {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    flex-grow: 1;
+
+    &--unwrapped {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    &--last {
+      flex-grow: 1.5;
+    }
+  }
+
+  &__item-title {
+    font-size: 28px;
+    padding-bottom: 10px;
+  }
+
+}

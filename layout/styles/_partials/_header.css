@@ -1,0 +1,7 @@
+﻿#header {
+  padding-top: 10%;
+
+  &__title {
+    font-size: 36px;
+  }
+}

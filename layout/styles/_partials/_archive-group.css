@@ -1,0 +1,20 @@
+﻿.archive-group {
+
+  &__item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  &__posts {
+    font-weight: bold;
+  }
+
+  &__year{
+    font-weight: bold;
+  }
+
+  &__month {
+    display: inline;
+    font-weight: normal;
+  }
+}

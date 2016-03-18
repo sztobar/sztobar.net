@@ -1,0 +1,28 @@
+﻿#avatar {
+
+  &__content {
+    height: 100px;
+    display: flex;
+
+    &:before,
+    &:after {
+      color: white;
+      content: '';
+      flex: 1;
+      border-bottom: white 4px solid;
+      margin: auto;
+      box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.35);
+    }
+  }
+
+  &__img {
+    width: 100px;
+    height: 100px;
+    border: 2px white solid;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 75px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.35);
+  }
+}

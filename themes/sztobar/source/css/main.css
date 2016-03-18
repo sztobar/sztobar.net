@@ -1,0 +1,30 @@
+@import './_dq.css';
+@import './_objects.css';
+@import './_tabs.css';
+@import './_dropdown.css';
+@import './_utilities.css';
+@import './_shame.css';
+
+/*
+@import '../node_modules/metro/build/css/metro.css';
+@import '../node_modules/metro/build/css/metro-icons.css';
+*/
+
+body {
+}
+
+.index img {
+  margin: 40px auto;
+  border-radius: 4px;
+  background: #fff;
+  display: block;
+}
+
+.index .notice {
+  margin: 20px auto;
+  padding: 15px 0;
+  text-align: center;
+  border: 1px solid #000;
+  border-width: 1px 0;
+  background: #666;
+}
