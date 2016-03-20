@@ -4,7 +4,10 @@
 @import './_footer.css';
 
 .sidebar {
-  background: url('../bg2.jpg');
+  width: 300px;
+  position: fixed;
+
+  background: url('../bg.jpg');
   background-size: cover;
   background-position: right;
   height: 100%;
@@ -13,11 +16,13 @@
   justify-content: space-between;
 
   color: white;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.85);
 
   &__item {
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
+    font-size: 1.6rem;
     flex-grow: 1;
 
     &--unwrapped {
@@ -31,7 +36,7 @@
   }
 
   &__item-title {
-    font-size: 28px;
+    font-size: 2.8rem;
     padding-bottom: 10px;
   }
 

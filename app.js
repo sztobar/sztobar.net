@@ -5,7 +5,7 @@ const path = require('path');
 const staticCache = require('koa-static-cache');
 const mount = require('koa-mount');
 
-const blog = staticCache(path.join(__dirname, 'public'));
+const blog = staticCache(path.join(__dirname, 'layout'/*'public'*/));
 
 const app = koa();
 
@@ -19,6 +19,7 @@ app.use(function *defaultToIndex(next) {
   }
   yield *next;
 });
-app.use(mount('/blog', blog));
+//app.use(mount('/blog', blog));
+app.use(blog);
 
 app.listen(80);

@@ -1,0 +1,109 @@
+﻿.posts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  &__item {
+    width: 50%;
+    padding: 3rem;
+    box-sizing: border-box;
+    height: 50vh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+
+    &--first {
+      width: 100%;
+    }
+
+
+    &:hover {
+
+      .posts__after {
+        height: 100rem;
+        transition: height 0.25s ease-in;
+      }
+
+      .posts__button {
+        opacity: 1.0;
+        bottom: 25%;
+        box-shadow: 0px 0px 20px black;
+        transition:
+          opacity 0.25s ease-in,
+          bottom 0.25s ease-in,
+          box-shadow 0.35s ease-in;
+      }
+    }
+
+  }
+
+  &__after {
+    height: 5rem;
+    position: absolute;
+    width: 100%;
+    bottom: 3rem;
+    left: 0;
+    right: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,0+0,1+100 */
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+  }
+
+  &__item-wrapper {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  &__title {
+    font-size: 3.6rem;
+    margin-bottom: 0.5rem;
+
+    &--bg {
+      position: absolute;
+      bottom: 0;
+      color: #fff;
+      text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.85);
+      margin-bottom: 0;
+    }
+  }
+
+  &__content {
+    font-size: 1.6rem;
+
+  }
+
+  &__bg {
+    position: relative;
+    width: 100%;
+  }
+
+  &__img {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 150px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  &__button {
+    opacity: 0;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.6rem;
+    border: 1px black solid;
+    padding: 7px;
+    box-shadow: 0px 0px 0px black;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-sizing: border-box;
+
+    cursor: pointer;
+  }
+
+}

@@ -2,7 +2,8 @@
   padding-top: 10%;
 }
 #header__title {
-  font-size: 36px;
+  font-size: 57px;
+  font-size: 3.6rem;
 }
 #avatar__content {
   height: 100px;
@@ -65,12 +66,17 @@
           justify-content: flex-end;
 }
 #footer__content {
+  font-size: 25px;
+  font-size: 1.6rem;
   background: rgba(0, 0, 0, 0.25);
   padding-top: 30px;
   padding-bottom: 10px;
 }
 .sidebar {
-  background: url('bg2.jpg');
+  width: 300px;
+  position: fixed;
+
+  background: url('bg.jpg');
   background-size: cover;
   background-position: right;
   height: 100%;
@@ -89,12 +95,15 @@
           justify-content: space-between;
 
   color: white;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.85);
 
 }
 .sidebar__item {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
+  font-size: 25px;
+  font-size: 1.6rem;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
@@ -111,12 +120,132 @@
           flex-grow: 1.5;
 }
 .sidebar__item-title {
-  font-size: 28px;
+  font-size: 44px;
+  font-size: 2.8rem;
   padding-bottom: 10px;
+}
+.posts {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+
+}
+.posts__item {
+  width: 50%;
+  padding: 48px;
+  padding: 3rem;
+  box-sizing: border-box;
+  height: 50vh;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
+.posts__item--first {
+  width: 100%;
+}
+.posts__item:hover .posts__after {
+  height: 1600px;
+  height: 100rem;
+  -webkit-transition: height 0.25s ease-in;
+          transition: height 0.25s ease-in;
+}
+.posts__item:hover .posts__button {
+  opacity: 1.0;
+  bottom: 25%;
+  box-shadow: 0px 0px 20px black;
+  -webkit-transition:
+          opacity 0.25s ease-in,
+          bottom 0.25s ease-in,
+          box-shadow 0.35s ease-in;
+          transition:
+          opacity 0.25s ease-in,
+          bottom 0.25s ease-in,
+          box-shadow 0.35s ease-in;
+}
+.posts__after {
+  height: 80px;
+  height: 5rem;
+  position: absolute;
+  width: 100%;
+  bottom: 48px;
+  bottom: 3rem;
+  left: 0;
+  right: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,0+0,1+100 */
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(0, 255, 255, 1)', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */
+}
+.posts__item-wrapper {
+  overflow: hidden;
+  height: 100%;
+}
+.posts__title {
+  font-size: 57px;
+  font-size: 3.6rem;
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
+}
+.posts__title--bg {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.85);
+  margin-bottom: 0;
+}
+.posts__content {
+  font-size: 25px;
+  font-size: 1.6rem;
+}
+.posts__bg {
+  position: relative;
+  width: 100%;
+}
+.posts__img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 150px;
+  margin: 0 auto;
+  display: block;
+}
+.posts__button {
+  opacity: 0;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 57px;
+  font-size: 3.6rem;
+  border: 1px black solid;
+  padding: 7px;
+  box-shadow: 0px 0px 0px black;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-sizing: border-box;
+  cursor: pointer;
 }
 html, 
 body {
-    height: 100%;
+  font-size: 62.5%;
+  height: 100%;
 }
 body {
   margin: 0px;
@@ -134,7 +263,7 @@ body {
   height: 100%;
 }
 #container__sidebar {
-  width: 33%;
+  min-width: 300px;
   max-width: 400px;
   height: 100%;
 }

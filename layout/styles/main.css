@@ -1,8 +1,10 @@
 @import './_partials/_sidebar.css';
+@import './_partials/_posts.css';
 
 html, 
 body {
-    height: 100%;
+  font-size: 62.5%;
+  height: 100%;
 }
 
 body {
@@ -15,11 +17,12 @@ body {
   height: 100%;
 
   &__sidebar {
-    width: 33%;
+    min-width: 300px;
     max-width: 400px;
     height: 100%;
   }
 
   &__main-content {
+
   }
 }
