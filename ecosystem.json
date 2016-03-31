@@ -16,7 +16,7 @@
       "ref"  : "origin/master",
       "repo" : "https://github.com/sztobar/sztobar.net.git",
       "path" : "~/sztobar.net",
-      "post-deploy" : "npm install; pm2 startOrRestart ecosystem.json --env production"
+      "post-deploy" : "npm install; hexo generate; pm2 startOrRestart ecosystem.json --env production"
     }
   }
 }
