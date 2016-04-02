@@ -20,7 +20,7 @@
     color: color-link
     text-decoration: none
     &:hover
-      text-decoration: underline
+      //text-decoration: underline
   ul, ol, dl
     ul, ol, dl
       margin-left: 15px
@@ -33,3 +33,24 @@
     border: 1px solid black
     height: 100px
     width: 100px
+
+.about
+  &__contacts
+    display: block
+    text-align: center
+    word-spacing: 10px
+
+  &__contact
+    display: inline-block
+    font-family: FontAwesome
+    text-align: center
+    font-size: 14px
+    width: 14px
+    height: 14px
+    cursor: pointer
+
+#twitter-link::after
+  content: '\f081'
+
+#github-link::after
+  content: '\f113'
