@@ -20,5 +20,6 @@ app.use(function *defaultToIndex(next) {
   yield *next;
 });
 app.use(blog);
+app.use(mount('/box-muller', staticCache(path.join(__dirname, 'box-muller'))));
 
 app.listen(80);

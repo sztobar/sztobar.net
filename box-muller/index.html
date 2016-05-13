@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Box-Muller</title>
+<style>
+
+.bar {
+  fill: steelblue;
+}
+
+.axis text {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: darkmagenta;
+  stroke-width: 2px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Box-Muller transform</h1>
+
+<div class="input-field">
+  <label for="n-input" class="input-field__label">n</label>
+  <div class="input-field__input">
+    <input type="number" id="n-input" value="100" step="100"/>
+  </div>
+</div>
+<div class="input-field">
+  <label for="a-input" class="input-field__label">a</label>
+  <div class="input-field__input">
+    <input type="number" id="a-input" value="1.0" step="0.1"/>
+  </div>
+</div>
+<div class="input-field">
+  <label for="µ-input" class="input-field__label">µ</label>
+  <div class="input-field__input">
+    <input type="number" id="μ-input" value="0.0" step="0.1"/>
+  </div>
+</div>
+<div class="input-field">
+  <label for="σ-input" class="input-field__label">σ</label>
+  <div class="input-field__input">
+    <input type="number" id="σ-input" value="1.0" step="0.1"/>
+  </div>
+</div>
+
+<div class="button-field">
+  <button id="refresh-btn">Odśwież</button>
+</div>
+
+<div class="button-field">
+  <button id="normal-distribution-btn">Rozkład normalny</button>
+</div>
+
+<svg id="chart"></svg>
+
+<!-- <svg id="gaussian"></svg> -->
+
+<script src="bundle.js"></script>
+</body>
+</html>
